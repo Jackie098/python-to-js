@@ -1,2 +1,6 @@
+import sys
 
-print('Hello World')
+
+#data = sys.args
+#print(dada)
+print('Hello world')
