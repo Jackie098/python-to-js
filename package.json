@@ -1,6 +1,15 @@
 {
-  "name": "pythonToJS",
+  "name": "pythontojs",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r sucrase/register index.js"
+  },
+  "dependencies": {
+    "python-shell": "^1.0.8"
+  },
+  "devDependencies": {
+    "sucrase": "^3.12.1"
+  }
 }
