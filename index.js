@@ -1,7 +1,19 @@
-import {PythonShell} from 'python-shell';
+import { PythonShell } from 'python-shell';
+import { resolve } from 'path';
 
-PythonShell.runString('x=1+1;print(x)', null, (err) => {
+const dirPython = '/usr/bin/python3'; //resolve('usr', 'bin', 'python3');
+const scriptPy = resolve(__dirname);
+
+const options = {
+  mode: 'text',
+  pythonPath: dirPython,
+  pythonOptions: ['-u'],
+  scriptPath: scriptPy,
+  args: ['a', 'b', 'c', 'd'], 
+}
+
+PythonShell.run('helloWorld.py', options, (err, results) => {
   if(err) throw err;
   
-  console.log('finished');
+  console.log(`results: ${results}`);
 })
