@@ -7,7 +7,7 @@
     "start": "node -r sucrase/register index.js"
   },
   "dependencies": {
-    "python-shell": "^1.0.8"
+    "python-shell": "^2.0.2"
   },
   "devDependencies": {
     "sucrase": "^3.12.1"
