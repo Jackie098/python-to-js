@@ -10,6 +10,6 @@
     "python-shell": "^1.0.8"
   },
   "devDependencies": {
-    "sucrase": "^3.12.1"
+    "sucrase": "^3.19.0"
   }
 }
